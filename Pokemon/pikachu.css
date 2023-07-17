@@ -1,0 +1,133 @@
+body {
+  background-color: antiquewhite;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.ear {
+  background: linear-gradient(
+      36deg,
+      yellow,
+      yellow 70%,
+      transparent 70%,
+      transparent
+    ),
+    radial-gradient(ellipse at top center, black 70%, yellow 70%);
+  width: 84px;
+  height: 270px;
+  border-radius: 50px / 150px;
+  position: absolute;
+  top: -10rem;
+}
+
+.ear-left {
+  left: 4px;
+  transform: rotate(320deg);
+}
+
+.ear-right {
+  right: 55px;
+}
+
+.head {
+  width: 400px;
+  height: 400px;
+  background-color: yellow;
+  border-radius: 38%;
+  position: relative;
+}
+
+.eyes {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+  top: 7rem;
+}
+
+.cheeks {
+  display: flex;
+  justify-content: space-between; /* Added */
+  position: relative;
+  top: 9rem;
+  flex-direction: row;
+}
+
+.eye {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid black;
+}
+
+.pupil {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.cheek {
+  width: 55px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.nose {
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: auto;
+  position: relative;
+  top: 10rem;
+}
+
+.mouth {
+  display: flex;
+  position: relative;
+  top: 5rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mouth::before,
+.mouth::after {
+  content: "";
+  width: 66px;
+  height: 22px; /* as the half of the width */
+  background-color: transparent;
+  border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
+  border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 5px solid black;
+  border-top: 0;
+}
+
+.mouth::before {
+  border-right: 5px solid black;
+}
+
+.mouth::after {
+  border-left: 5px solid black;
+}
+
+.pikachu-text {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+}
